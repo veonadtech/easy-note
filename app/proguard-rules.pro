@@ -14,8 +14,27 @@
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+-keepattributes SourceFile,LineNumberTable
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Prebid Mobile
+-keep class org.prebid.mobile.** { *; }
+-dontwarn org.prebid.mobile.**
+
+# Realm
+-keep class io.realm.** { *; }
+-dontwarn io.realm.**
+
+# Keep your model classes
+-keep class com.veon.prebid.demo.** { *; }
+
+# Kotlin Coroutines
+-keep class kotlinx.coroutines.** { *; }
+-dontwarn kotlinx.coroutines.**
+
+# Compose
+-keep class androidx.compose.** { *; }
+-dontwarn androidx.compose.**

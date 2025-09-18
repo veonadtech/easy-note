@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "minote"
+rootProject.name = "note"
 include(":app")

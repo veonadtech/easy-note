@@ -12,7 +12,7 @@ android {
     compileSdkPreview = "Baklava"
 
     defaultConfig {
-        applicationId = "com.veon.prebid"
+        applicationId = "com.veon.prebid.demo"
         minSdk = 21
         targetSdk = 36
         versionCode = 1
@@ -23,11 +23,37 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
+        }
+    }
+
+    signingConfigs {
+        create("release") {
+            keyAlias = "prebiddemo"
+            keyPassword = "12345678"
+            storeFile = file("appkeystore/appkeystore")
+            storePassword = "12345678"
+        }
+    }
+    
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
+            isUniversalApk = true
+        }
     }
 
     buildTypes {
+        getByName("debug") {
+            signingConfig = signingConfigs.getByName("release")
+        }
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
