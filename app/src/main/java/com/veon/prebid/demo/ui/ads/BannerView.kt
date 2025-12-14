@@ -14,8 +14,8 @@ import org.prebid.mobile.api.rendering.BannerView
 import org.prebid.mobile.api.rendering.listeners.BannerViewListener
 import org.prebid.mobile.eventhandlers.GamBannerEventHandler
 
-private const val CONFIG_ID = "beeline_uz_android_universal_320x50"
-private const val AD_UNIT_ID = "/23081467975/beeline_uzbekistan_android/beeline_uz_android_universal_320x50"
+private const val CONFIG_ID = "beeline_uz_android_universal_320x50_test2"
+private const val AD_UNIT_ID = "/23081467975/beeline_uzbekistan_android/beeline_uz_android_universal_320x50_test2"
 
 @Composable
 fun BannerView() {

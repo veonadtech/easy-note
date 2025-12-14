@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">note</string>
+    <string name="app_name">Easy notes</string>
     <string name="loading_msg">Loading your %s</string>
     <string name="notes_list_success_message">Here are your notes</string>
     <string name="note_list_success_message">Here is your note</string>

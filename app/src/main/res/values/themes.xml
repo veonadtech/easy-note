@@ -5,8 +5,8 @@
 
     <style name="SplashScreen" parent="Theme.SplashScreen">
         <item name="postSplashScreenTheme">@style/Theme.Minote</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
-        <item name="windowSplashScreenBackground">#FEFBFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="windowSplashScreenBackground">#220B57</item>
         <item name="android:windowSplashScreenBehavior" tools:targetApi="tiramisu">icon_preferred</item>
         <item name="windowSplashScreenAnimationDuration">4000</item>
         <item name="splashScreenIconSize">10dp</item>

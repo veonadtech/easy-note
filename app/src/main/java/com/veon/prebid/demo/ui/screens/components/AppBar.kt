@@ -21,7 +21,7 @@ fun AppBar(
     modifier: Modifier = Modifier,
     title: @Composable () -> Unit = {
         Text(
-            text = "Notes",
+            text = "Easy Notes",
             fontSize = 18.sp,
             style = MaterialTheme.typography.bodyMedium
         )

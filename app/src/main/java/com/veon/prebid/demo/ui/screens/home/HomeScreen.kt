@@ -52,7 +52,7 @@ import kotlinx.coroutines.launch
 private object BottomNavigation {
     val navItems = listOf(
         NavItem(
-            label = "Notes",
+            label = "Easy Notes",
             icon = Icons.Rounded.AddCircle,
             contentType = NavItem.Content.Notes
         ),
