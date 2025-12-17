@@ -35,7 +35,8 @@ fun InterstitialView() {
                     val eventHandler = GamInterstitialEventHandler(context.findAndroidActivity(), AD_UNIT_ID)
 
                     // configure banner placement
-                    val adUnit = InterstitialAdUnit(context, CONFIG_ID, eventHandler)
+//                    val adUnit = InterstitialAdUnit(context, CONFIG_ID, eventHandler)
+                    val adUnit = InterstitialAdUnit(context, CONFIG_ID)
 
                     // lister for custom tracking or custom display creative
                     adUnit.setInterstitialAdUnitListener(object : InterstitialAdUnitListener {

@@ -34,7 +34,8 @@ fun BannerView() {
                     val eventHandler = GamBannerEventHandler(context, AD_UNIT_ID, AdSize(320, 50))
 
                     // configure banner placement
-                    val adUnit = BannerView(context, CONFIG_ID, eventHandler)
+//                    val adUnit = BannerView(context, CONFIG_ID, eventHandler)
+                    val adUnit = BannerView(context, CONFIG_ID, AdSize(320, 50))
 
                     // lister for custom tracking or custom display creative
                     adUnit.setBannerListener(object : BannerViewListener {

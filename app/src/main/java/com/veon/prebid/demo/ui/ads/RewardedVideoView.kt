@@ -36,7 +36,8 @@ fun RewardedVideoView(
 
                     val eventHandler = GamRewardedEventHandler(context.findAndroidActivity(), AD_UNIT_ID)
 
-                    val adUnit = RewardedAdUnit(context, CONFIG_ID, eventHandler)
+//                    val adUnit = RewardedAdUnit(context, CONFIG_ID, eventHandler)
+                    val adUnit = RewardedAdUnit(context, CONFIG_ID)
 
                     adUnit.setRewardedAdUnitListener(object : RewardedAdUnitListener {
                         override fun onAdLoaded(rewardedAdUnit: RewardedAdUnit?) {
@@ -47,6 +48,7 @@ fun RewardedVideoView(
                         override fun onAdFailed(rewardedAdUnit: RewardedAdUnit?, exception: AdException?) {
                             onFinish()
                         }
+
                         override fun onAdClicked(rewardedAdUnit: RewardedAdUnit?) {}
                         override fun onAdClosed(rewardedAdUnit: RewardedAdUnit?) {}
                         override fun onUserEarnedReward(rewardedAdUnit: RewardedAdUnit?, reward: Reward?) {
