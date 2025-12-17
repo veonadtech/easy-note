@@ -36,23 +36,29 @@ android {
             keyPassword = "12345678"
             storeFile = file("appkeystore/appkeystore")
             storePassword = "12345678"
+            enableV1Signing = true
+            enableV2Signing = true
+            enableV3Signing = true
+            enableV4Signing = true
         }
     }
     
     splits {
         abi {
-            isEnable = true
+            isEnable = false
             reset()
             include("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
-            isUniversalApk = true
+            isUniversalApk = false
         }
     }
 
     buildTypes {
         getByName("debug") {
+            isDebuggable = true
             signingConfig = signingConfigs.getByName("release")
         }
         release {
+            isDebuggable = false
             isMinifyEnabled = true
             isShrinkResources = true
             signingConfig = signingConfigs.getByName("release")
