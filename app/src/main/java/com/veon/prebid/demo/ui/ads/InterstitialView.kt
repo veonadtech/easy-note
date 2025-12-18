@@ -14,7 +14,7 @@ import org.prebid.mobile.api.rendering.InterstitialAdUnit
 import org.prebid.mobile.api.rendering.listeners.InterstitialAdUnitListener
 import org.prebid.mobile.eventhandlers.GamInterstitialEventHandler
 
-private const val CONFIG_ID = "beeline_uz_android_universal_interstitial_test2"
+private const val CONFIG_ID = "veon_demo_android_interstitial"
 private const val AD_UNIT_ID = "/23081467975/beeline_uzbekistan_android/beeline_uz_android_universal_interstitial_test2"
 
 @Composable

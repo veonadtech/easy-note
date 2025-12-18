@@ -14,7 +14,7 @@ class App : Application() {
     }
 
     private fun initPrebid() {
-        PrebidMobile.setPrebidServerAccountId("uz.beeline.odp")
+        PrebidMobile.setPrebidServerAccountId("org.prebid.veondemo")
         PrebidMobile.setCustomStatusEndpoint("https://prebid.veonadx.com/status")
         PrebidMobile.setTimeoutMillis(3000)
         PrebidMobile.setShareGeoLocation(true)
