@@ -17,6 +17,9 @@ navigation-compose = "2.8.5"
 prebid = "0.1.1"
 
 realm = "2.3.0"
+googleServices = "4.4.4"
+firebaseCrashlytics = "3.0.3"
+firebaseBom = "34.9.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -44,12 +47,17 @@ prebid-core = { group = "com.github.veonadtech.prebid-android-sdk", name = "core
 prebid-eventhandlers = { group = "com.github.veonadtech.prebid-android-sdk", name = "eventhandlers", version.ref = "prebid"}
 prebid-mobile = { group = "com.github.veonadtech.prebid-android-sdk", name = "mobile", version.ref = "prebid"}
 prebid-org = { group = "com.github.veonadtech.prebid-android-sdk", name = "prebidorg", version.ref = "prebid"}
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 realm = { id = "io.realm.kotlin", version.ref = "realm"}
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
 
 [bundles]
 
